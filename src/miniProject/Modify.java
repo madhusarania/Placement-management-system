@@ -70,6 +70,7 @@ public class Modify {
 		frame.getContentPane().add(lblNewLabel_1);
 		
 		textField = new JTextField();
+		textField.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		textField.setBounds(941, 140, 303, 48);
 		frame.getContentPane().add(textField);
 		textField.setColumns(10);

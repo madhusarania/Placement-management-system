@@ -87,26 +87,31 @@ public class Insert {
 		frame.getContentPane().add(lblNewLabel_1_4);
 		
 		textField = new JTextField();
+		textField.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		textField.setBounds(934, 134, 296, 50);
 		frame.getContentPane().add(textField);
 		textField.setColumns(10);
 		
 		textField_1 = new JTextField();
+		textField_1.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		textField_1.setColumns(10);
 		textField_1.setBounds(934, 232, 296, 50);
 		frame.getContentPane().add(textField_1);
 		
 		textField_2 = new JTextField();
+		textField_2.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		textField_2.setColumns(10);
 		textField_2.setBounds(934, 346, 296, 50);
 		frame.getContentPane().add(textField_2);
 		
 		textField_3 = new JTextField();
+		textField_3.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		textField_3.setColumns(10);
 		textField_3.setBounds(934, 454, 296, 50);
 		frame.getContentPane().add(textField_3);
 		
 		textField_4 = new JTextField();
+		textField_4.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		textField_4.setColumns(10);
 		textField_4.setBounds(934, 562, 296, 50);
 		frame.getContentPane().add(textField_4);

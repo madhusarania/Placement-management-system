@@ -14,11 +14,11 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.io.*;
 import java.awt.event.ActionEvent;
+import javax.swing.JTextArea;
 
 public class Display {
 
 	private JFrame frame;
-	private JTextField textField;
 
 	/**
 	 * Launch the application.
@@ -58,10 +58,9 @@ public class Display {
 		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 50));
 		frame.getContentPane().add(lblNewLabel);
 		
-		textField = new JTextField();
-		textField.setBounds(209, 228, 1120, 357);
-		frame.getContentPane().add(textField);
-		textField.setColumns(10);
+		JTextArea textArea = new JTextArea();
+		textArea.setBounds(320, 230, 935, 358);
+		frame.getContentPane().add(textArea);
 		
 		JButton btnNewButton = new JButton("DISPLAY");
 		btnNewButton.addActionListener(new ActionListener() {
@@ -77,7 +76,7 @@ public class Display {
 					usn = result[1];
 					sem = result[2];
 					branch = result[3];
-					textField.setText("The details are: " + name + " " + usn + " " + sem + " " + branch);
+					System.out.println("The details are: " + '\n' + name + " " + usn + " " + sem + " " + branch + '\n');
 				}
 				br.close();
 				}
@@ -90,6 +89,7 @@ public class Display {
 		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 29));
 		btnNewButton.setBounds(675, 674, 229, 61);
 		frame.getContentPane().add(btnNewButton);
+		
 		frame.setBounds(500, 500, 1050, 800);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}

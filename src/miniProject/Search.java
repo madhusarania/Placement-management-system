@@ -65,12 +65,14 @@ public class Search {
 		frame.getContentPane().add(lblNewLabel_1);
 		
 		textField = new JTextField();
+		textField.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		textField.setBounds(913, 164, 334, 68);
 		frame.getContentPane().add(textField);
 		textField.setColumns(10);
 		
 		textField_1 = new JTextField();
-		textField_1.setBounds(278, 335, 1011, 193);
+		textField_1.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		textField_1.setBounds(278, 335, 1011, 104);
 		frame.getContentPane().add(textField_1);
 		textField_1.setColumns(10);
 		
