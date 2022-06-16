@@ -13,7 +13,7 @@ import javax.swing.BoxLayout;
 import java.awt.GridLayout;
 import javax.swing.JButton;
 
-public class PlacementManagement {
+public class Home {
 
 	private JFrame frame;
 
@@ -24,7 +24,7 @@ public class PlacementManagement {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					PlacementManagement window = new PlacementManagement();
+					Home window = new Home();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -36,7 +36,7 @@ public class PlacementManagement {
 	/**
 	 * Create the application.
 	 */
-	public PlacementManagement() {
+	public Home() {
 		initialize();
 	}
 
@@ -50,39 +50,32 @@ public class PlacementManagement {
 		frame.getContentPane().setBackground(new Color(135, 206, 250));
 		frame.getContentPane().setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("PLACEMENT CELL");
+		JLabel lblNewLabel = new JLabel("HOME");
 		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 66));
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setBounds(160, 54, 1189, 57);
+		lblNewLabel.setBounds(242, 53, 1189, 57);
 		frame.getContentPane().add(lblNewLabel);
 		
-		JButton btnNewButton = new JButton("INSERT");
-		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 40));
+		JButton btnNewButton = new JButton("STUDENT");
+		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 50));
 		btnNewButton.setForeground(new Color(0, 0, 0));
 		btnNewButton.setBackground(new Color(0, 255, 255));
-		btnNewButton.setBounds(175, 248, 211, 67);
+		btnNewButton.setBounds(175, 248, 429, 114);
 		frame.getContentPane().add(btnNewButton);
 		
-		JButton btnDisplay = new JButton("DISPLAY");
-		btnDisplay.setForeground(Color.BLACK);
-		btnDisplay.setFont(new Font("Tahoma", Font.BOLD, 40));
-		btnDisplay.setBackground(Color.CYAN);
-		btnDisplay.setBounds(651, 248, 252, 67);
-		frame.getContentPane().add(btnDisplay);
+		JButton btnCompany = new JButton("COMPANY");
+		btnCompany.setForeground(Color.BLACK);
+		btnCompany.setFont(new Font("Tahoma", Font.BOLD, 50));
+		btnCompany.setBackground(Color.CYAN);
+		btnCompany.setBounds(1085, 248, 429, 114);
+		frame.getContentPane().add(btnCompany);
 		
-		JButton btnDisplay_1 = new JButton("SEARCH");
-		btnDisplay_1.setForeground(Color.BLACK);
-		btnDisplay_1.setFont(new Font("Tahoma", Font.BOLD, 40));
-		btnDisplay_1.setBackground(Color.CYAN);
-		btnDisplay_1.setBounds(1149, 248, 252, 67);
-		frame.getContentPane().add(btnDisplay_1);
-		
-		JButton btnModify = new JButton("MODIFY");
-		btnModify.setForeground(Color.BLACK);
-		btnModify.setFont(new Font("Tahoma", Font.BOLD, 40));
-		btnModify.setBackground(Color.CYAN);
-		btnModify.setBounds(175, 497, 211, 67);
-		frame.getContentPane().add(btnModify);
+		JButton btnSummary = new JButton("SUMMARY");
+		btnSummary.setForeground(Color.BLACK);
+		btnSummary.setFont(new Font("Tahoma", Font.BOLD, 50));
+		btnSummary.setBackground(Color.CYAN);
+		btnSummary.setBounds(597, 539, 429, 114);
+		frame.getContentPane().add(btnSummary);
 		frame.setBounds(500, 500, 1050, 800);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
