@@ -102,8 +102,7 @@ public class Home {
 				homeframe.dispose();	
 			}
 		});
-		
-		
+
 		btnSummary.setForeground(Color.BLACK);
 		btnSummary.setFont(new Font("Tahoma", Font.BOLD, 50));
 		btnSummary.setBackground(Color.CYAN);
